@@ -39,14 +39,15 @@ function operate(operater, num1, num2) {
 
 function addNum(value){
     let input = document.getElementById('screen');
-    input.value = input.value + value;  
-    number1 = input.value;
-    
+    input.value = input.value + value; 
 }
 
-function clearNum(num){
-    let clear = docuement.getElementById('screen');
-    input.value = num;
+function clearNum(){
+    document.getElementById('screen').value = '';
 }
 
-console.log(number1);
+function buttonOperator() {
+    let number1 = document.getElementById('screen').value;
+    console.log(number1);
+}
+

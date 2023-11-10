@@ -13,6 +13,6 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-.screen {
+#screen {
     width: 15%;
 }
