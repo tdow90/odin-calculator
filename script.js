@@ -36,3 +36,17 @@ function operate(operater, num1, num2) {
         console.log(result);
     }
 }
+
+function addNum(value){
+    let input = document.getElementById('screen');
+    input.value = input.value + value;  
+    number1 = input.value;
+    
+}
+
+function clearNum(num){
+    let clear = docuement.getElementById('screen');
+    input.value = num;
+}
+
+console.log(number1);
