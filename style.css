@@ -1,0 +1,18 @@
+.math {
+    display: flex;
+    flex-direction: column;
+}
+.buttons {
+    width: 40%;
+    display: flex;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.numbers {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.screen {
+    width: 15%;
+}
