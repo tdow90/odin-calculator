@@ -38,6 +38,7 @@ function operate(operater, num1) {
         result = divide(num1, num2);
         console.log(result);
     }
+    document.getElementById('screen').value = result;
 }
 
 function addNum(value){
