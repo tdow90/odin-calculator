@@ -18,7 +18,10 @@ let number1;
 let number2;
 let operatorButton;
 
-function operate(operater, num1, num2) {
+
+function operate(operater, num1) {
+    number2 = parseInt(document.getElementById('screen').value);
+    let num2 = number2;
     if(operater == "add") {
         result = add(num1, num2);
         console.log(result);
@@ -46,8 +49,10 @@ function clearNum(){
     document.getElementById('screen').value = '';
 }
 
-function buttonOperator() {
-    let number1 = document.getElementById('screen').value;
+function buttonOperator(operation) {
+    worker = operation;
+    number1 = parseInt(document.getElementById('screen').value);
     console.log(number1);
+    console.log(worker);
+    clearNum();
 }
-
