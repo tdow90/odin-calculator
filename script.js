@@ -11,7 +11,12 @@ function multiply(num1, num2) {
 }
 
 function divide(num1, num2) {
-   return num1/num2;
+    if (num2 == 0){
+        alert("You can't divide by zero!!")
+    }
+   else {
+        return num1/num2;
+   }
 }
 
 let number1;
@@ -24,19 +29,15 @@ function operate(operater, num1) {
     let num2 = number2;
     if(operater == "add") {
         result = add(num1, num2);
-        console.log(result);
     }
     else if(operater == "subtrack") {
         result = subtract(num1, num2);
-        console.log(result);
     }
     else if(operater == "multiply") {
         result = multiply(num1, num2);
-        console.log(result);
     }
     else if(operater == "divide") {
         result = divide(num1, num2);
-        console.log(result);
     }
     document.getElementById('screen').value = result;
 }
@@ -53,7 +54,5 @@ function clearNum(){
 function buttonOperator(operation) {
     worker = operation;
     number1 = parseInt(document.getElementById('screen').value);
-    console.log(number1);
-    console.log(worker);
     clearNum();
 }
